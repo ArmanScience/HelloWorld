@@ -3,8 +3,8 @@ project("HelloWorld")
 
 add_executable("${PROJECT_NAME}" "Main.cpp")
 
-install(TARGETS "${PROJECT_NAME}" DESTINATION "${CMAKE_SOURCE_DIR}/Installed")
-install(FILES "Main.cpp" DESTINATION "${CMAKE_SOURCE_DIR}/Installed")
+install(TARGETS "${PROJECT_NAME}" DESTINATION "bin")
+install(FILES "Main.cpp" DESTINATION "src")
 
 INCLUDE(CTest)
 
